@@ -1,0 +1,19 @@
+﻿<div class="form-group" show-errors>
+    <label for="dateRegistered" class="col-sm-3 control-label">Date Posted</label>
+    <div class="col-sm-6">
+        <input type="date" id="dateRegistered" name="dateRegistered"
+               ng-model="product.dateRegistered" ng-required="true" ng-disabled="true" />
+        <span class="help-block"
+              ng-if="productForm.dateRegistered.$error.required">Date Posted Required.</span>
+    </div>
+</div>
+
+<div class="form-group" show-errors>
+    <label for="dateExpired" class="col-sm-3 control-label">Expires On</label>
+    <div class="col-sm-6">
+        <input type="date" id="dateExpired" name="dateExpired"
+               ng-model="product.dateExpired" ng-required="true" />
+        <span class="help-block"
+              ng-if="productForm.dateExpired.$error.required">Date Posted Required.</span>
+    </div>
+</div>

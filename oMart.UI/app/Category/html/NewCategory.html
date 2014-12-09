@@ -1,0 +1,39 @@
+﻿
+<div class="panel panel-primary">
+    <!-- Default panel contents -->
+    <div class="panel-heading">{{panelHeader}}</div>
+    <div class="panel-body">
+        <!--<div ng-show="isEditDelete" class="pull-right">
+            <button id="deleteButton" class="btn btn-danger" data-ng-click="delete()"><i class="glyphicon glyphicon-trash" /> Delete</button>
+        </div>-->
+
+        <form class="form-horizontal" role="form" id="categoryForm" name="categoryForm" novalidate ng-submit="saveData()">
+
+            <div class="form-group" show-errors>
+                <label for="firstName" class="col-sm-3 control-label">Product Category</label>
+                <div class="col-sm-6">
+                    <input type="text" id="categoryDesc" name="categoryDesc" class="form-control"
+                           ng-model="category.categoryDesc" ng-required="true" />
+                    <span class="help-block"
+                          ng-if="categoryForm.categoryDesc.$error.required">Product Category is required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 col-sm-offset-3 col-md-offset-3">
+                    <input type="reset" id="cancelSave" name="cancelSave" value="Cancel"
+                           class="btn btn-default" ng-click="cancelSaveForm()" />
+                    <input type="submit" id="submitForm" name="submitForm" value="Save"
+                           class="btn btn-primary" />
+
+                    <!--<input type="reset" id="resetForm" name="resetForm" value="Reset"
+                       class="btn btn-warning" ng-click="resetForm()" />-->
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

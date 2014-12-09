@@ -1,0 +1,28 @@
+﻿
+<div id="myModal" class="modal fade ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Confirmation</h4>
+            </div>
+            <div class="modal-body">
+                <div class="hero">
+                    <div class="hero-left">
+                        <i class="icon-desktop"></i>
+                    </div>
+
+                    <div class="hero-right">
+                        <!--<div class="hero-title"></div>-->
+                        <p>Are you sure you want to delete {{category.categoryDesc}}?</p>
+                        <p class="text-warning"><small>If you delete this, your data will be lost.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-off" /> Cancel</button>
+                <button id="deleteFinal" class="btn btn-danger" ng-click="deleteFinal()"><i class="glyphicon glyphicon-trash" /> Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

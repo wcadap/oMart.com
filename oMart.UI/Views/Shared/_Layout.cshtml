@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html ng-app="oMartApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>oMart Online Shopping</title>
+
+    @*<link href="/Content/Bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Templates/style/font-awesome.css" rel="stylesheet" />
+    <link href="/Content/ui/toastr.css" rel="stylesheet" />
+    <link href="Content/Templates/style/style.css" rel="stylesheet" />
+
+    <link href="Content/ui/css-animate.css" rel="stylesheet" />
+    <link href="Content/ui/wui.css" rel="stylesheet" />
+    <link href="/Content/Site.css" rel="stylesheet" />*@
+
+    @Styles.Render("~/Content/css")
+
+    <!--<base href="/home" />-->
+
+
+</head>
+<body>
+
+    <div class="navbar navbar-default brg_olive_3d animated">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/home"><img src="images/logo/omartlogo1.png" /></a>
+
+        </div>
+
+        <div class="navbar-collapse collapse" data-ng-controller="indexController">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li><a ui-sref="home"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+                <!--<li><a href="#/category"><i class="fa fa-shield"></i> Category</a></li>-->
+                @*<li><a ui-sref="category"><i class="glyphicon glyphicon-record"></i> Category</a></li>
+                <li><a ui-sref="audit"><i class="icon-calendar"></i> Audit</a></li>*@
+                <li><a ui-sref="about"><i class="glyphicon glyphicon-info-sign"></i> About</a></li>
+                <li><a ui-sref="omartArch"><i class="glyphicon glyphicon-tags"></i> oMart Architecture</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle"
+                       data-toggle="dropdown"
+                       href="#">
+                        <i class="glyphicon glyphicon-screenshot"></i> Admin
+                        <b class="caret"></b>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-left" role=menu>
+                        <li><a ui-sref="category"><i class="glyphicon glyphicon-record"></i> Category</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="audit"><i class="icon-calendar"></i> Audit</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a ui-sref="myOmart"><i class="glyphicon glyphicon-dashboard"></i> My oMart</a></li>
+
+                <li data-ng-hide="!authentication.isAuth" class="dropdown">
+                    <a class="dropdown-toggle"
+                       data-toggle="dropdown"
+                       href="#">
+                        <i class="glyphicon glyphicon-screenshot"></i> {{authentication.userName}}
+                        <b class="caret"></b>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-left" role=menu>
+                        <li><a ui-sref="myOmart"><i class="glyphicon glyphicon-dashboard"></i> My oMart</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="audit"><i class="icon-calendar"></i> Change Password</a></li>
+                        <li class="divider"></li>
+                        <li><a href="" data-ng-click="logOut()"><i class="glyphicon glyphicon-log-out"></i> Log Out</a></li>
+                        @*<li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>*@
+                    </ul>
+                </li>
+
+                <li data-ng-hide="authentication.isAuth"><a ui-sref="logIn"><i class="glyphicon glyphicon-log-in"></i> Log In</a></li>
+                @*<li data-ng-hide="authentication.isAuth"><a href="" data-ng-click="logIn()"><i class="glyphicon glyphicon-log-in"></i> Log In</a></li>*@
+                <li> <a ui-sref="signUp"><i class="glyphicon glyphicon-registration-mark"></i> Sign Up</a></li>
+
+            </ul>
+        </div>
+        <div class="omart_social social">
+            <div class="pull-right">
+
+                <a href="http://www.codexsquare.blogspot.com/" target="_blank">B</a> |
+                <a href=""><i class="icon-facebook"></i></a> |
+                <a href=""><i class="icon-twitter"></i></a> |
+                <a href=""><i class="icon-linkedin"></i></a> |
+                <a href=""><i class="icon-google-plus"></i></a>
+            </div>
+        </div>
+
+        <div ncy-breadcrumb>
+        </div>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+        <div class="page-home" ui-view>
+        </div>
+    </div>
+
+    <footer class="brg_olive_3d">
+        
+            <div ng-include="'app/Home/html/footer.html'"></div>
+        
+    </footer>
+
+    <!--Standard Libraries-->
+    @*<script src="Scripts/jQuery/jquery-1.10.2.js"></script>
+    <script src="Scripts/ui/toastr.js"></script>
+    <script src="app/Utils/fileUpload/angular-file-upload-shim.js"></script>
+
+    <script src="Scripts/Angular1.3.2/angular.js"></script>
+    <script src="Scripts/Angular1.3.2/angular-route.js"></script>
+    <script src="Scripts/Angular1.3.2/angular-animate.js"></script>
+
+    
+    <script src="Scripts/Bootstrap/ui-bootstrap-tpls-0.3.0.js"></script>
+    <script src="Scripts/Bootstrap/angular-ui-bootstrap.js"></script>
+
+    <script src="app/Utils/fileUpload/angular-file-upload.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/assets/underscore.js"></script>
+    <script src="Scripts/assets/angular-ui-router.js"></script>
+    <script src="Scripts/assets/angular-breadcrumb.js"></script>*@
+
+    
+
+    @Scripts.Render("~/bundles/standard")
+    @Scripts.Render("~/bundles/omartApp")
+
+    
+    <!--application js-->
+    <!--<script src="app/Directives/imageResize.js"></script>
+    <script src="app/Directives/imageDragDrop.js"></script>
+    <script src="app/Directives/timeAgoModule.js"></script>
+
+    <script src="app/oMartApp.js"></script>
+    <script src="app/Utils/logInfo.js"></script>
+
+    <script src="app/DataServices/appService.js"></script>
+    <script src="app/DataServices/categoryService.js"></script>
+    <script src="app/DataServices/productService.js"></script>
+
+    <script src="app/Category/js/categoryController.js"></script>
+    <script src="app/Products/js/myOmartController.js"></script>
+    <script src="app/Home/js/homeController.js"></script>
+
+    <script src="app/DataServices/auditServices.js"></script>
+    <script src="app/Audit/js/auditController.js"></script>
+
+    <script src="app/Utils/ValidationDirective.js"></script>-->
+
+    @*@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+    {
+        @Html.AntiForgeryToken()
+    }*@
+</body>
+</html>

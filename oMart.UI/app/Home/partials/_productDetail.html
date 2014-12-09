@@ -1,0 +1,51 @@
+﻿
+<div id="productModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">{{product.productName}}</h4>
+            </div>
+            <div class="modal-body">
+
+                <!--<div class="hero">-->
+                <div class="row">
+                    <div class="col-md-5 col-lg-4 col-sm-10 col-xs-12 margin-bottom-10">
+                        <div class="product-image box-shadow centered">
+                            <img src="{{product.imageURL}}" class="img-rounded" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-lg-8">
+                        <div class="wpanel-title">
+                            {{product.productName}}
+                        </div>
+                        <div class="wpanel-description">
+                            {{product.dateRegistered | timeago:true}} | Views :{{product.viewCount}} | Valid Until: {{product.dateExpired | date:"MMM dd yyyy hh:mm"}}
+                        </div>
+                        <hr />
+                        <div class="wpanel-description-black">
+                            {{product.description}}
+                        </div>
+                        <p class="wpanel-price">
+                            {{product.unitPrice | currency:"USD$"}}
+                        </p>
+                        <div class="wpanel-description-normal-black">
+                                Unity: {{product.unit}} <br />
+                        </div>
+                        <br />
+
+                        <div class="wpanel-description-normal-black">
+                            <button type="button" class="btn btn-warning" ng-disabled="true"><i class="glyphicon glyphicon-shopping-cart" /> Purchase</button>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-off" /> Close</button>
+            </div>
+        </div>
+    </div>
+</div>

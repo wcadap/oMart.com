@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>WebApiTokenAuth</id>
+    <version>1.0.3</version>
+    <title>WebAPI Token Auth Bootstrap</title>
+    <authors>Aviran Cohen</authors>
+    <owners>Aviran Cohen</owners>
+    <projectUrl>http://dgandalf.github.io/WebApiTokenAuthBootstrap</projectUrl>
+    <iconUrl>http://i.picresize.com/images/2013/10/03/O5gZy.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple Token and Users Authentication and Authorization Bootstrap for WebAPI applications. Provided with 'TokenAuthApiController' which has built-in support for Login and Logout (cookies-based) and automatic token parsing and authenticating (inside query strings, form data or cookies). Visit the Project Site and Wiki on GitHub for Getting Started guide and Code Samples.</description>
+    <summary>Simple Token and User Auth Bootstrap for WebAPI applications.</summary>
+    <releaseNotes>1.0.3
+* Project Metadata changes
+* New Wiki on GitHub with code samples and explanations.
+
+Next versions:
+* Sample Nuget Package.
+* Fully documented code
+* Fully documented Wiki</releaseNotes>
+    <tags>ASP.NET MVC WebAPI Token Bootstrap Auth Authentication Authorization Security</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="5.0.6" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Net.Http.Formatting" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Web.Http" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

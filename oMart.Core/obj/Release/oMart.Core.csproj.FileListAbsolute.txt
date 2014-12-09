@@ -1,0 +1,5 @@
+D:\oMart\oMart\oMart.Core\bin\Release\oMart.Core.dll
+D:\oMart\oMart\oMart.Core\bin\Release\oMart.Core.pdb
+D:\oMart\oMart\oMart.Core\obj\Release\oMart.Core.dll
+D:\oMart\oMart\oMart.Core\obj\Release\oMart.Core.pdb
+D:\oMart\oMart\oMart.Core\obj\Release\oMart.Core.csprojResolveAssemblyReference.cache

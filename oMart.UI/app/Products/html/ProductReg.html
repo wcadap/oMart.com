@@ -1,0 +1,137 @@
+﻿<style>
+    
+
+</style>
+<div class="panel panel-primary">
+    <!-- Default panel contents -->
+    <div class="panel-heading">{{panelHeader}}</div>
+    <div class="panel-body">
+        <!--<div ng-show="isEditDelete" class="pull-right">
+            <button id="deleteButton" class="btn btn-danger" data-ng-click="delete()"><i class="glyphicon glyphicon-trash" /> Delete</button>
+        </div>-->
+
+        <form class="form-horizontal" id="productForm" role="form" name="productForm" novalidate enctype="multipart/form-data" ng-submit="saveData()">
+            <fieldset>
+                <legend><i class="glyphicon glyphicon-tags"></i> Product Details</legend>
+
+                <div class="form-group">
+                    <label for="categorySelect" class="col-sm-3 control-label">Category</label>
+                    <div class="col-sm-6">
+                        <select id="categoryOption" data-ng-model="categoryNew"
+                                data-ng-options="u.categoryDesc for u in categories"
+                                class="form-control"></select>
+                    </div>
+                </div>
+
+                <div class="form-group" show-errors>
+                    <label for="firstName" class="col-sm-3 control-label">Product Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" id="productName" name="productName" class="form-control"
+                               ng-model="product.productName" ng-required="true" />
+                        <span class="help-block"
+                              ng-if="productForm.productName.$error.required">Product Name is required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group" show-errors>
+                    <label for="Description" class="col-sm-3 control-label">Product Description</label>
+                    <div class="col-sm-6">
+                        <textarea rows="4" cols="50" id="description" name="description" class="form-control"
+                                  ng-model="product.description" ng-required="true"></textarea>
+                        
+                        <span class="help-block"
+                              ng-if="productForm.description.$error.required">Product Description is required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="unitSelect" class="col-sm-3 control-label">Unit</label>
+                    <div class="col-sm-6">
+                        <select id="unitSelect" data-ng-model="unitSelected"
+                                data-ng-options="u.name for u in units"
+                                class="form-control"></select>
+
+                        <!--<select id="unitSelect" data-ng-model="unitSelected"
+                                data-ng-options="u.name for u in units"
+                                ng-change="setUnitSelected(unitSelected)" class="form-control"></select>-->
+                    </div>
+                </div>
+
+                <div class="form-group" show-errors>
+                    <label for="unitPrice" class="col-sm-3 control-label">Unit Price</label>
+                    <div class="col-sm-6">
+                        <input type="number" step="0.5" id="unitPrice" name="unitPrice" class="form-control"
+                               ng-model="product.unitPrice" ng-required="true" min="1" />
+                        <span class="help-block"
+                              ng-if="productForm.unitPrice.$error.$invalid">Invalid Price Required.</span>
+                    </div>
+                </div>
+
+                <!--<div ng-include="'app/Products/partial/_productDetails.html'"></div>-->
+                <div ng-include="'app/Products/partial/_duration.html'"></div>
+                
+            </fieldset>
+            <fieldset>
+                <legend><i class="glyphicon glyphicon-eye-open" ></i> Product Image</legend>
+                    <div class="alert brg_orange_3d" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">NOTE</span>
+                        Please be informed that images/photo will be resize to 300(width) by 350(height) pixels. This will help your viewers see your profile faster.
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="file" id="fileselect" name="fileselect" accept="image/*"
+                               class="filestyle" data-buttonbefore="true" data-buttonname="btn-primary" 
+                               ng-file-select="onSelectedFile($files)" />
+
+                        <button type="button" class="btn btn-primary" ng-click="resizeToFit()">
+                            <i class="glyphicon glyphicon-resize-small"></i> Just Resize Image(300x350)
+                        </button>
+                    </div>
+                    <!--</div>-->
+                    
+                    <!--<div class="col-md-12">-->
+                    <div class="col-md-12 filedrag" id="filedrag" image-zone on-image-drop="imageDropped()">
+                        or Drop File Here
+
+                        <div id="origImage">
+
+                        </div>
+
+                    </div>
+                    <!--</div>-->
+                    <!--<div id="productImage">
+
+        </div>-->
+
+
+
+</fieldset>
+
+                <fieldset>
+                    <legend>Actions</legend>
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-3">
+                            <input type="button" id="cancelSave" name="cancelSave" value="Cancel"
+                                   class="btn btn-primary" ng-click="cancelSaveForm()" />
+
+                            <input type="submit" id="submitForm" name="submitForm" value="Save"
+                                   class="btn btn-primary" />
+
+                            <input type="reset" id="resetForm" name="resetForm" value="Reset"
+                                   class="btn btn-warning" ng-click="resetForm()" />
+
+                        </div>
+                    </div>
+                </fieldset>
+        </form>
+    </div>
+</div>
+
+<div ng-include="'app/Products/partial/_confirmModal.html'"></div>
+
+<script>
+    $(function () {
+        $(":file").filestyle({ buttonBefore: true });
+    });
+</script>

@@ -1,0 +1,86 @@
+﻿
+<div class="panel panel-primary">
+    <div class="panel-heading"><i class="glyphicon glyphicon-registration-mark" ></i> Sign Up</div>
+    <div class="panel-body">
+        
+        <form class="form-horizontal" role="form" id="signUpForm" name="signUpForm" novalidate ng-submit="saveData()">
+
+            <div class="form-group" show-errors>
+                <label for="userName" class="col-sm-3 control-label">User Name</label>
+                <div class="col-sm-6">
+                    
+                    <input type="text" id="userName" name="userName" class="form-control" placeholder="User Name"
+                           ng-model="user.userName" ng-minlength="6" ng-maxlength="25" ng-required="true" />
+
+                    <span class="help-block"
+                          ng-if="signUpForm.userName.$error.required">User Name Required.</span>
+                    
+                    <span class="help-block"
+                          ng-if="signUpForm.userName.$error.minlength &&
+                                !signUpForm.userName.$error.required">User Name too short.</span>
+
+                    <span class="help-block"
+                          ng-if="signUpForm.userName.$error.maxlength &&
+                                !signUpForm.userName.$error.minlength &&
+                                !signUpForm.userName.$error.required ">User Name too long.</span>
+                </div>
+            </div>
+            <!--ng-pattern="(?=.*[a-zA-Z])(?=.{0,9}).*$"-->
+
+            <div class="form-group" show-errors>
+                <label for="password" class="col-sm-3 control-label">Password</label>
+                <div class="col-sm-6">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password"
+                           ng-model="user.password" ng-minlength="6" ng-maxlength="25"
+                           ng-required="true" ng-pattern="passPattern" />
+                    
+                    <span class="help-block"
+                          ng-if="signUpForm.password.$error.required">Password Required.
+                    </span>
+                    <span class="help-block"
+                          ng-if="signUpForm.password.$error.minlength && !signUpForm.password.$error.required">
+                        Password too short.
+                    </span>
+
+                    <span class="help-block"
+                          ng-if="signUpForm.password.$error.pattern">
+                        Password too weak. At least 1 upper case and a number.
+                    </span>
+
+                    <span class="help-block"
+                          ng-if="signUpForm.password.$error.maxlength
+                          && !signUpForm.password.$error.required
+                          && !signUpForm.password.$error.minlength">
+                        Password too long.
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" show-errors>
+                <label for="confirmPassword" class="col-sm-3 control-label">Confirm Password</label>
+                <div class="col-sm-6">
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" 
+                           placeholder="Confirm Password"
+                           ng-model="user.confirmPassword" ng-required="true"
+                           pw-match="password" />
+                    <span class="help-block"
+                          ng-if="signUpForm.confirmPassword.$error.pwmatch">Password Do not Match.</span>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 col-sm-offset-3 col-md-offset-3">
+                    <input type="button" id="cancelSave" name="cancelSave" value="Cancel"
+                           class="btn btn-default" ng-click="cancelSaveForm()" />
+                    <input type="submit" id="submitForm" name="submitForm" value="Sign Up"
+                           class="btn btn-primary" />
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

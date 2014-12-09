@@ -1,0 +1,115 @@
+﻿<div>
+    
+    <div class="panel panel-primary">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Audit</div>
+        <div class="panel-body">
+            <div class="progress" data-ng-show="isBusy">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only">100% Complete</span>
+                </div>
+            </div>
+
+            <div data-ng-hide="isBusy">
+                <div class="col-md-6 col-lg-6">
+                    <!--<button class="btn btn-primary" data-ng-click="newProduct()"><i class="glyphicon glyphicon-file"></i> New Product</button>-->
+                    <!--<a class="btn btn-primary" ui-sref="myOmart.newProduct"><i class="glyphicon glyphicon-file"></i> New Product</a>-->
+
+                    <!--Filter by Date-->
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="input-group add-on">
+                        <input type="text" class="form-control" placeholder="Search" name="searchTxt" id="searchTxt" 
+                               ng-disabled="isBusy" ng-keypress="CheckEnter($event)">
+                        <span class="input-group-addon wpanel-cursor" data-ng-click="searchItem()" 
+                              ng-disabled="isBusy" title="Search"><i class="glyphicon glyphicon-search"></i></span>
+                    </div>
+
+                    
+                </div>
+             </div>
+        </div>
+
+        <!-- Table -->
+        <!--table-condensed table-bordered table-striped-->
+        <div class="table table-responsive" data-ng-hide="isBusy">
+            <table class="table table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th width="15%">
+                            <div class="wpanel-cursor" ng-click="changeOrder('date')">
+                                Date <span ng-show="orderByField == 'date'"><i class="glyphicon glyphicon-sort-by-attributes-alt"></i></span>
+                            </div>
+
+                        </th>
+                        
+                        <th width="15%">
+                            <div class="wpanel-cursor" ng-click="changeOrder('module')">
+                                Module <span ng-show="orderByField == 'module'"><i class="glyphicon glyphicon-sort-by-attributes"></i></span>
+                            </div>
+                        </th>
+                        <th width="60%">
+                            <div class="wpanel-cursor" ng-click="changeOrder('description')">
+                                Details <span ng-show="orderByField == 'description'"><i class="glyphicon glyphicon-sort-by-attributes"></i></span>
+                            </div>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="audit in data.audits | orderBy:orderByField : reverseSort | filter:searchTxt">
+                        <td>
+                            <p>{{audit.date | date:"MM/dd/yyyy hh:mm:ss"}}</p>
+                        </td>
+                        <td>
+                            {{audit.module}}
+                        </td>
+                        
+                        <td>
+                            {{audit.description}}
+                            
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th width="15%">
+                            <div class="wpanel-cursor" ng-click="changeOrder('date')">
+                                Date <span ng-show="orderByField == 'Date'"><i class="glyphicon glyphicon-sort-by-attributes"></i></span>
+                            </div>
+
+                        </th>
+
+                        <th width="15%">
+                            <div class="wpanel-cursor" ng-click="changeOrder('module')">
+                                Module <span ng-show="orderByField == 'module'"><i class="glyphicon glyphicon-sort-by-attributes"></i></span>
+                            </div>
+                        </th>
+                        <th width="60%">
+                            <div class="wpanel-cursor" ng-click="changeOrder('description')">
+                                Details <span ng-show="orderByField == 'description'"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                            </div>
+
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div> 
+    </div>
+</div>
+
+<div class="row container" >
+    
+        <div data-ng-show="filteredData.length > 0">
+            <div data-pagination
+                 data-on-select-page="pageChanged(page)"
+                 data-total-items="totalRecords"
+                 data-page="currentPage"
+                 data-items-per-page="pageSize"
+                 data-boundary-links="true"
+                 class="pagination-sm"></div>
+        </div>
+    
+</div>
+

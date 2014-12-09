@@ -1,0 +1,12 @@
+﻿
+<!--<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />-->
+<div>
+    <label for="fileselect">Upload Image:</label>
+    <input type="file" id="fileselect" name="fileselect" ng-file-select="onSelectedFile($files)" />
+    <div id="filedrag" class="filedrag" image-zone on-image-drop="imageDropped()">
+        or Drop File Here
+        <div id="productImage">
+
+        </div>
+    </div>
+</div>

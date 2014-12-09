@@ -1,0 +1,47 @@
+﻿
+<div data-ng-show="isFirstRun" ng-include="'app/Home/html/flash.html'"></div>
+
+<div class="row">
+    
+    <div class="col-md-9" data-ng-hide="isFirstRun" ng-include="'app/Home/html/products.html'"></div>
+    <div class="col-md-3" data-ng-hide="isFirstRun">
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                TRENDING
+            </div>
+            <div class="panel-body" >
+                <div class="wpanel-description wpanel-cursor" data-ng-repeat="product in trendingProducts" data-ng-click="productDetail(product);">
+                    <table>
+                        <tr>
+                            <td width="100" valign="top">
+
+                                <div class="wpanel-trending-container">
+                                    <div class="circle wpanel-trending-no"> {{$index + 1}}</div>
+                                    <div class="wpanel-trending-image-border centered">
+                                        <img class="img-rounded" ng-show="product.imageThumbUrl" ng-src="{{product.imageThumbUrl}}" alt={{product.productName}} />
+                                    </div>
+                                </div>
+                            </td>
+                            <td valign="top">
+
+                                <strong>{{product.productName}}</strong>
+
+                                Views: {{product.viewCount}}
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+

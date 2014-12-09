@@ -1,0 +1,8 @@
+D:\oMart\oMart\oMart.Data\obj\Debug\oMart.Data.csprojResolveAssemblyReference.cache
+D:\oMart\oMart\oMart.Data\bin\Debug\oMart.Data.dll
+D:\oMart\oMart\oMart.Data\bin\Debug\oMart.Data.pdb
+D:\oMart\oMart\oMart.Data\bin\Debug\oMart.Core.dll
+D:\oMart\oMart\oMart.Data\bin\Debug\oMart.Core.pdb
+D:\oMart\oMart\oMart.Data\bin\Debug\EntityFramework.xml
+D:\oMart\oMart\oMart.Data\obj\Debug\oMart.Data.dll
+D:\oMart\oMart\oMart.Data\obj\Debug\oMart.Data.pdb

@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Winifred\Desktop\omart_online\Web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/Audit/html/Audit.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Audit/js/auditController.js">
+      <publishTime>12/07/2014 22:29:28</publishTime>
+    </File>
+    <File Include="app/Category/html/Category.html">
+      <publishTime>12/01/2014 22:36:56</publishTime>
+    </File>
+    <File Include="app/Category/html/NewCategory.html">
+      <publishTime>12/02/2014 09:15:50</publishTime>
+    </File>
+    <File Include="app/Category/js/categoryController.js">
+      <publishTime>12/02/2014 09:02:52</publishTime>
+    </File>
+    <File Include="app/DataServices/appService.js">
+      <publishTime>12/07/2014 22:28:57</publishTime>
+    </File>
+    <File Include="app/DataServices/auditServices.js">
+      <publishTime>12/08/2014 12:29:06</publishTime>
+    </File>
+    <File Include="app/DataServices/authService.js">
+      <publishTime>12/08/2014 10:35:10</publishTime>
+    </File>
+    <File Include="app/DataServices/categoryService.js">
+      <publishTime>12/02/2014 13:12:34</publishTime>
+    </File>
+    <File Include="app/DataServices/productService.js">
+      <publishTime>12/08/2014 22:42:36</publishTime>
+    </File>
+    <File Include="app/Directives/imageDragDrop.js">
+      <publishTime>12/08/2014 10:35:17</publishTime>
+    </File>
+    <File Include="app/Directives/imageResize.js">
+      <publishTime>12/05/2014 11:23:39</publishTime>
+    </File>
+    <File Include="app/Directives/passwordMatch.js">
+      <publishTime>12/01/2014 10:10:05</publishTime>
+    </File>
+    <File Include="app/Directives/timeAgoModule.js">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/accordion.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/html/about.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/html/carousel.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/html/flash.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/html/footer.html">
+      <publishTime>12/02/2014 07:34:21</publishTime>
+    </File>
+    <File Include="app/Home/html/home.html">
+      <publishTime>12/05/2014 11:55:18</publishTime>
+    </File>
+    <File Include="app/Home/html/omartArchitecture.html">
+      <publishTime>12/08/2014 14:44:52</publishTime>
+    </File>
+    <File Include="app/Home/html/productDetail.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/html/products.html">
+      <publishTime>12/08/2014 23:25:43</publishTime>
+    </File>
+    <File Include="app/Home/js/homeController.js">
+      <publishTime>12/08/2014 22:34:08</publishTime>
+    </File>
+    <File Include="app/Home/partials/_omartflash.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Home/partials/_productDetail.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/oMartApp.js">
+      <publishTime>12/08/2014 21:05:48</publishTime>
+    </File>
+    <File Include="app/Products/html/MyoMart.html">
+      <publishTime>12/04/2014 07:05:11</publishTime>
+    </File>
+    <File Include="app/Products/html/ProductReg.html">
+      <publishTime>12/08/2014 15:53:01</publishTime>
+    </File>
+    <File Include="app/Products/js/myOmartController.js">
+      <publishTime>12/08/2014 22:23:25</publishTime>
+    </File>
+    <File Include="app/Products/partial/_confirmModal.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Products/partial/_duration.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Products/partial/_imageProcess.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Products/partial/_productDetails.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Products/partial/_tableHeader.html">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/test/cropcontroller.js">
+      <publishTime>12/05/2014 23:45:41</publishTime>
+    </File>
+    <File Include="app/test/cropimg.html">
+      <publishTime>12/05/2014 11:55:23</publishTime>
+    </File>
+    <File Include="app/UniController/indexController.js">
+      <publishTime>12/08/2014 21:14:54</publishTime>
+    </File>
+    <File Include="app/Users/html/LogIn.html">
+      <publishTime>12/08/2014 22:49:35</publishTime>
+    </File>
+    <File Include="app/Users/html/SignUp.html">
+      <publishTime>12/01/2014 22:35:01</publishTime>
+    </File>
+    <File Include="app/Users/js/userController.js">
+      <publishTime>12/01/2014 23:06:45</publishTime>
+    </File>
+    <File Include="app/Utils/deviceCompatibility.js">
+      <publishTime>12/08/2014 22:49:13</publishTime>
+    </File>
+    <File Include="app/Utils/fileUpload/angular-file-upload-shim.js">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Utils/fileUpload/angular-file-upload.js">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Utils/imageCropperFactory.js">
+      <publishTime>12/08/2014 16:12:19</publishTime>
+    </File>
+    <File Include="app/Utils/logInfo.js">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="app/Utils/ValidationDirective.js">
+      <publishTime>11/30/2014 23:49:35</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>11/30/2014 16:51:05</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>11/30/2014 16:50:38</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/30/2014 16:51:06</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>12/04/2014 07:46:51</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>12/04/2014 07:46:51</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/30/2014 16:51:10</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/30/2014 16:51:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/30/2014 16:51:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>11/30/2014 16:51:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/30/2014 16:51:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/30/2014 16:51:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/30/2014 16:51:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>11/30/2014 16:51:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>11/30/2014 16:51:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>11/30/2014 16:51:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>11/30/2014 16:51:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>11/30/2014 16:51:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>11/30/2014 16:51:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>11/30/2014 16:51:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/30/2014 16:51:01</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/30/2014 16:50:48</publishTime>
+    </File>
+    <File Include="bin/oMart.Core.dll">
+      <publishTime>12/04/2014 07:46:03</publishTime>
+    </File>
+    <File Include="bin/oMart.Data.dll">
+      <publishTime>12/08/2014 00:36:29</publishTime>
+    </File>
+    <File Include="bin/oMart.UI.dll">
+      <publishTime>12/08/2014 22:22:40</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/30/2014 16:51:15</publishTime>
+    </File>
+    <File Include="bin/PostSharp.dll">
+      <publishTime>11/25/2014 11:28:15</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Dynamic.dll">
+      <publishTime>11/22/2014 05:59:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/30/2014 16:51:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>08/13/2013 00:19:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/30/2014 16:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/30/2014 16:51:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Owin.dll">
+      <publishTime>11/30/2014 16:51:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/30/2014 16:51:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/30/2014 16:51:01</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/30/2014 16:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/30/2014 16:50:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/30/2014 16:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/30/2014 16:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/30/2014 16:51:00</publishTime>
+    </File>
+    <File Include="bin/TokenAuthorization.Core.dll">
+      <publishTime>12/02/2014 14:59:16</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/30/2014 16:51:06</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/bootstrap-theme.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/bootstrap-theme.css.map">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/bootstrap-theme.min.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/bootstrap.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/bootstrap.css.map">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/bootstrap.min.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/font-awesome.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/breadcrumb.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/cropImage.css">
+      <publishTime>12/05/2014 11:07:29</publishTime>
+    </File>
+    <File Include="Content/cropper.css">
+      <publishTime>12/08/2014 15:37:35</publishTime>
+    </File>
+    <File Include="Content/css-animation/animate.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/animate.min.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounce.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceIn.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceInDown.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceInLeft.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceInRight.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceInUp.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceOut.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceOutDown.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceOutLeft.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceOutRight.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/bounceOutUp.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeIn.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInDown.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInDownBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInLeft.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInLeftBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInRight.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInRightBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInUp.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeInUpBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOut.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutDown.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutDownBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutLeft.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutLeftBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutRight.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutRightBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutUp.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/fadeOutUpBig.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/flash.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/flip.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/flipInX.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/flipInY.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/flipOutX.css">
+      <publishTime>11/30/2014 17:08:43</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/flipOutY.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/hinge.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/lightSpeedIn.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/lightSpeedOut.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/pulse.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rollIn.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rollOut.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateIn.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateInDownLeft.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateInDownRight.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateInUpLeft.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateInUpRight.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateOut.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateOutDownLeft.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateOutDownRight.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateOutUpLeft.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/rotateOutUpRight.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/shake.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/swing.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/tada.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/css-animation/source/wobble.css">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/font/fontawesome-webfont.eot">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/font/fontawesome-webfont.svg">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/font/fontawesome-webfont.ttf">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/font/fontawesome-webfont.woff">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/font/FontAwesome.otf">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/08/2014 15:41:04</publishTime>
+    </File>
+    <File Include="Content/Templates/font/fontawesome-webfont.eot">
+      <publishTime>11/30/2014 17:08:44</publishTime>
+    </File>
+    <File Include="Content/Templates/font/fontawesome-webfont.svg">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/font/fontawesome-webfont.ttf">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/font/fontawesome-webfont.woff">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/font/FontAwesome.otf">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/back.jpg">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/favicon/favicon.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/1.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/2.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/24_7.jpg">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/24_7.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/3.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/4.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/img/parallax/arrows.png">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/style/font-awesome.css">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/style/prettyPhoto.css">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/Templates/style/style.css">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/ui/css-animate.css">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/ui/toastr.css">
+      <publishTime>11/30/2014 17:08:45</publishTime>
+    </File>
+    <File Include="Content/ui/wui.css">
+      <publishTime>12/08/2014 22:45:52</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/30/2014 17:08:38</publishTime>
+    </File>
+    <File Include="font/fontawesome-webfont.eot">
+      <publishTime>12/01/2014 23:39:06</publishTime>
+    </File>
+    <File Include="font/fontawesome-webfont.svg">
+      <publishTime>12/01/2014 23:39:06</publishTime>
+    </File>
+    <File Include="font/fontawesome-webfont.ttf">
+      <publishTime>12/01/2014 23:39:06</publishTime>
+    </File>
+    <File Include="font/fontawesome-webfont.woff">
+      <publishTime>12/01/2014 23:39:06</publishTime>
+    </File>
+    <File Include="font/FontAwesome.otf">
+      <publishTime>12/01/2014 23:39:06</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/30/2014 16:50:47</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/30/2014 16:50:47</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/30/2014 16:50:47</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/30/2014 16:50:47</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/30/2014 16:50:38</publishTime>
+    </File>
+    <File Include="images/20120814-alert-icon.jpg">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/banner/About.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/banner/omart2.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/banner/omart3.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/banner/omart4.png">
+      <publishTime>12/08/2014 22:42:03</publishTime>
+    </File>
+    <File Include="images/banner/ormat5.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/compact_compact_icon_sos_practice-lessons.gif">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/drop-box-iconsmall.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/logo/omartlogo.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/logo/omartlogo1.png">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/processing.gif">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/slides/big-img1.jpg">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/slides/big-img2.jpg">
+      <publishTime>11/30/2014 17:08:53</publishTime>
+    </File>
+    <File Include="images/slides/big-img3.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/02/2014 14:59:22</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>12/04/2014 07:46:34</publishTime>
+    </File>
+    <File Include="products/0d35a8b6-3db6-4f97-b237-baa4723d0a0fcustomer-loyalty_retention-300x265.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/0f1c64cd-95de-498f-a34e-e41000765780guava.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/12b9a6f5-ef7e-41b9-a138-015bb28e35e9happy-customer %281%29.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/1a129520-b0ea-49b7-bd64-25ddbb9c5722images2.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/2acc080d-06c6-407f-9864-e58d84e67814big-img1.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/2c5bdc7b-b3ac-4578-9ca6-ff0fccb8348f3dImages.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/2f63e27e-afac-40bb-8ba6-66f5bf639c5cundefined.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/2f8c6663-f6d6-40ac-93fe-de746c5e2c70header.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/378c1988-3968-4e48-8ce6-f2f8d658c792banana.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/4a059a9e-3ddb-4bd4-ab97-77c4d56d6e1cstarfish_icon.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/4f7c9549-0268-4b9a-80c5-8e3f8b2f316114bb042d-8d43-4656-bf68-ac0d48020890.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/51f9f10c-bd8f-47a8-b932-d3200f3971afshirt1.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/55fce224-ee08-4741-9eb3-a67a6c7175bbdrop-box-iconsmall.png">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/562d48de-54cb-4f4c-85ac-4a6937a0abfcundefined.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/59372e19-f5da-47fe-8203-d9c47fe07a40cobra_icon.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/6589fadd-d2c1-4b8a-9c86-e0a0fa3be9ab0608_sb_5stepspic.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/66837e5e-ab1d-42c6-89cf-fb9c53187688332_script_icon1.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/66f25a35-9cb4-4c3f-af78-ee4019c5edb8orange.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/6754a629-5333-474e-a698-717bb7b539efback.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/69076f6f-cf54-4c23-8141-1b3dab8e705becs_g11-all-in-one-pc.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/6aa05403-c400-4758-89dc-b11019e59e06Furnace-Repair-Service.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/7418eb73-9f91-417e-9882-c577129fa098strawberry.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/78262c99-86fd-4b81-88ac-458dbadfab58mr_app_logo.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/7b93f36b-d7c6-45a8-8e5c-73453668b274macaw_icon.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/80e7ad6d-a410-4229-a0c6-5a80d76141b3anaconda_icon.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/86ba718d-e4e6-460e-988a-680dbc2447a21.png">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/92186b43-a491-4399-bc34-1135cd4cb3f5tortoise_icon.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/92911dc6-18ce-40f0-92b1-de75b7e44155car.jpg">
+      <publishTime>11/30/2014 17:08:54</publishTime>
+    </File>
+    <File Include="products/a6c6fdf9-9841-43ab-a0a5-043d3908edc0bat_icon.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/aa065ffc-51ee-4709-aab0-348b905ed86dbig-img1.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/ad1c9fb4-565c-4b22-9739-a4c821e5b469starling_bird_icon.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/b2a03d52-3e69-4d82-8b5b-66175bff2496car.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/BodyPart_744f444f-61cd-40c9-a831-f39dae93c7fa.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/c2711806-ea9b-4a20-abd4-cd739d8aa2a0baboon_icon.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/c379c8a6-bd5e-4912-b60f-0f055f216484undefined.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/c40558e6-92af-441e-a8c6-b0b98556f2a7mr_app_logo.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/cb01c6db-e4d6-441a-af03-36dc7d5b799dbig-img2.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/cb9fbd1f-0f58-4193-b29c-5ebb3322ce98hummingbird_icon.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/d242955a-fb96-4dfa-a191-1b1b9dcd45ef332_script_icon1.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/daae7eba-5cfa-4090-8c28-64961fbd57ba20120814-alert-icon.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/ed5bcb0e-c745-4a04-be05-b9e3e69df506listening.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/efa6b2f5-c5b4-4142-943c-3913269f995cHappy_Customer %281%29.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/f0a70ac8-72f9-41b2-9ee0-a900100618c4orange.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/f593988b-ac36-44a7-bce0-0cd362b488c1undefined.png">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/f8956ffe-007f-47c7-9af2-59341f6af65bBeth-Harte-Customer-Centric.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/f96138c6-7963-4d27-8d22-49e858bea226face.png">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/ff67db79-4673-4c2a-9f41-ccd482b56bb1photo.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/thumb0d35a8b6-3db6-4f97-b237-baa4723d0a0fcustomer-loyalty_retention-300x265.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/thumb12b9a6f5-ef7e-41b9-a138-015bb28e35e9happy-customer %281%29.jpg">
+      <publishTime>11/30/2014 17:08:55</publishTime>
+    </File>
+    <File Include="products/thumb1a129520-b0ea-49b7-bd64-25ddbb9c5722images2.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb2acc080d-06c6-407f-9864-e58d84e67814big-img1.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb2c5bdc7b-b3ac-4578-9ca6-ff0fccb8348f3dImages.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb2f8c6663-f6d6-40ac-93fe-de746c5e2c70header.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb4a059a9e-3ddb-4bd4-ab97-77c4d56d6e1cstarfish_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb4f7c9549-0268-4b9a-80c5-8e3f8b2f316114bb042d-8d43-4656-bf68-ac0d48020890.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb51f9f10c-bd8f-47a8-b932-d3200f3971afshirt1.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb55fce224-ee08-4741-9eb3-a67a6c7175bbdrop-box-iconsmall.png">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb59372e19-f5da-47fe-8203-d9c47fe07a40cobra_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb6589fadd-d2c1-4b8a-9c86-e0a0fa3be9ab0608_sb_5stepspic.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb66f25a35-9cb4-4c3f-af78-ee4019c5edb8orange.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb6754a629-5333-474e-a698-717bb7b539efback.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb69076f6f-cf54-4c23-8141-1b3dab8e705becs_g11-all-in-one-pc.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb6aa05403-c400-4758-89dc-b11019e59e06Furnace-Repair-Service.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb78262c99-86fd-4b81-88ac-458dbadfab58mr_app_logo.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb7b93f36b-d7c6-45a8-8e5c-73453668b274macaw_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb80e7ad6d-a410-4229-a0c6-5a80d76141b3anaconda_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb86ba718d-e4e6-460e-988a-680dbc2447a21.png">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb92186b43-a491-4399-bc34-1135cd4cb3f5tortoise_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumb92911dc6-18ce-40f0-92b1-de75b7e44155car.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumba6c6fdf9-9841-43ab-a0a5-043d3908edc0bat_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbaa065ffc-51ee-4709-aab0-348b905ed86dbig-img1.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbad1c9fb4-565c-4b22-9739-a4c821e5b469starling_bird_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbb2a03d52-3e69-4d82-8b5b-66175bff2496car.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbc2711806-ea9b-4a20-abd4-cd739d8aa2a0baboon_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbc40558e6-92af-441e-a8c6-b0b98556f2a7mr_app_logo.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbcb01c6db-e4d6-441a-af03-36dc7d5b799dbig-img2.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbcb9fbd1f-0f58-4193-b29c-5ebb3322ce98hummingbird_icon.jpg">
+      <publishTime>11/30/2014 17:08:56</publishTime>
+    </File>
+    <File Include="products/thumbd242955a-fb96-4dfa-a191-1b1b9dcd45ef332_script_icon1.jpg">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="products/thumbdaae7eba-5cfa-4090-8c28-64961fbd57ba20120814-alert-icon.jpg">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="products/thumbed5bcb0e-c745-4a04-be05-b9e3e69df506listening.jpg">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="products/thumbefa6b2f5-c5b4-4142-943c-3913269f995cHappy_Customer %281%29.jpg">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="products/thumbf8956ffe-007f-47c7-9af2-59341f6af65bBeth-Harte-Customer-Centric.jpg">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="products/thumbf96138c6-7963-4d27-8d22-49e858bea226face.png">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="products/thumbff67db79-4673-4c2a-9f41-ccd482b56bb1photo.jpg">
+      <publishTime>11/30/2014 17:08:57</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.2/angular-animate.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.2/angular-route.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.2/angular.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.5/angular-animate.js">
+      <publishTime>12/05/2014 00:45:48</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.5/angular-resource.js">
+      <publishTime>12/05/2014 00:45:49</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.5/angular-route.js">
+      <publishTime>12/05/2014 00:45:49</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.5/angular-sanitize.js">
+      <publishTime>12/05/2014 00:45:49</publishTime>
+    </File>
+    <File Include="Scripts/Angular1.3.5/angular.js">
+      <publishTime>12/05/2014 00:45:49</publishTime>
+    </File>
+    <File Include="Scripts/assets/angular-breadcrumb.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/assets/angular-ui-router.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/assets/ui-bootstrap-tpls.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/assets/underscore.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/Bootstrap/angular-ui-bootstrap.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/Bootstrap/ui-bootstrap-tpls-0.3.0.js">
+      <publishTime>11/30/2014 20:00:58</publishTime>
+    </File>
+    <File Include="Scripts/Bootstrap/ui-bootstrap-tpls-0.3.0.min.js">
+      <publishTime>11/30/2014 18:23:33</publishTime>
+    </File>
+    <File Include="Scripts/imageCropper/cropper.js">
+      <publishTime>12/08/2014 08:12:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>11/30/2014 18:23:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/30/2014 18:23:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/30/2014 18:23:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/jQuery/jquery-1.10.2.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/30/2014 18:23:32</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>12/04/2014 13:23:06</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/30/2014 18:23:32</publishTime>
+    </File>
+    <File Include="Scripts/ui/bootstrap-filestyle.js">
+      <publishTime>12/08/2014 09:48:03</publishTime>
+    </File>
+    <File Include="Scripts/ui/toastr.js">
+      <publishTime>11/30/2014 18:23:31</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/04/2014 07:37:05</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/30/2014 16:50:38</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/08/2014 16:34:27</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/30/2014 16:50:38</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/30/2014 16:50:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/08/2014 14:15:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

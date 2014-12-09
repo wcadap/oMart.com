@@ -1,0 +1,31 @@
+﻿<div class="row">
+    <div class="col-md-8 col-lg-4">
+        <table class="ptable">
+            <tr>
+                <td width="40%">
+                    <div class="product-image box-shadow centered">
+                         <img src="{{product.imageURL}}" class="img-rounded" />
+                    </div>
+
+                    <!--<div class="col-md-6 col-lg-6 col-sm-7 col-sm-7 product-image centered box-shadow">
+                    <img src="{{product.imageURL}}" />
+                </div>-->
+
+                </td>
+                <td width="60%">
+                    <div class="padLeft50">
+                        <div class="wpanel-title">
+                            {{product.productName}}
+                        </div>
+                        <div class="wpanel-description">
+                            {{product.description}}
+                        </div>
+                        <p class="wpanel-price">
+                            {{product.unitPrice | currency:"USD$"}}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

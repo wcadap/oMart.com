@@ -1,0 +1,114 @@
+﻿
+
+<div class="row margin-bottom-10">
+    <div class="container wbox brg_yellow_3d_2 rounded_corner">
+
+        <div class="content">
+            <!--<div class="col-md-2 hidden-xs">
+                <img src="images/banner/omart4.png" />
+            </div>-->
+            
+            <!--<div class="form-group">
+                <label for="categoryOption" class="col-md-2 control-label">Category</label>
+                <div class="col-md-4">
+                    <select id="categoryOption" data-ng-model="categorySelected" ng-disabled="isBusy"
+                            data-ng-options="u.categoryDesc for u in categories"
+                            ng-change="goGetbyCategories(categorySelected)" class="form-control"></select>
+                </div>
+            </div>-->
+
+            <div class="col-md-5 col-lg-5 col-sm-10 col-xs-10">
+                <div class="input-group add-on">
+                    <span class="input-group-addon hidden-xs"><i class="icon-fire"></i></span>
+                    <select id="categoryOption" data-ng-model="categorySelected" ng-disabled="isBusy"
+                            data-ng-options="u.categoryDesc for u in categories"
+                            ng-change="goGetbyCategories(categorySelected)" class="form-control"></select>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-6">
+                <div class="input-group add-on">
+                    <input type="text" class="form-control" placeholder="Search" name="searchTxt" id="searchTxt"
+                           ng-disabled="isBusy" ng-keypress="CheckEnter($event)">
+                    <span class="input-group-addon wpanel-cursor" data-ng-click="searchItem()"
+                          ng-disabled="isBusy" title="Search Product"><i class="glyphicon glyphicon-search"></i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row">
+        <div class="progress" data-ng-show="isBusy">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                <span class="sr-only">100% Complete</span>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12"  data-ng-repeat="product in filteredData | orderBy:'dateRegistered' : true | filter:searchTxt">
+            
+            <div class="wpanel brg_wax_3d box-shadow wpanel-cursor" data-ng-click="productDetail(product);" ng-disabled="isBusy">
+                <div class=" wpanel-body">
+                <div class="min-line-height100">
+                    <div class="wpanel-title">
+                        {{product.productName | limitTo:44}}
+                    </div>
+                    <div class="wpanel-description">
+                        {{product.description | limitTo:70}}
+                    </div>
+                </div>
+
+                <div class="wpanel-price">
+                    {{product.unitPrice | currency:"USD$"}}
+                </div>
+
+                <table class="width100percent">
+                    <tr>
+                        <td class="tdDate">
+                            <div class="wpanel-date">
+                                <p>
+                                    {{product.dateRegistered | date:"MM/dd/yyyy"}} <br />
+                                    {{product.dateRegistered | timeago:true}}
+
+                                </p>
+
+                            </div>
+                        </td>
+                        <td align="right">
+                            <div class="wpanel-image-thumbnail centered ">
+                                <img ng-show="product.imageThumbUrl" ng-src="{{product.imageThumbUrl}}" class="img-rounded" alt={{product.productName}} />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            
+        </div>
+
+    <div class="col-md-9" data-ng-show="filteredData.length == 0">
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Nothing to display. Unable to find products on {{categorySelected.categoryDesc}}.
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-9">
+        <div data-ng-show="filteredData.length > 0">
+            <div data-pagination
+                 data-on-select-page="pageChanged(page)"
+                 data-total-items="totalRecords"
+                 data-page="currentPage"
+                 data-items-per-page="homePageSize"
+                 data-boundary-links="true"
+                 class="pagination-sm"></div>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'app/home/partials/_productDetail.html'"></div>

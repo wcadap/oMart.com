@@ -1,0 +1,55 @@
+﻿<div class="form-group">
+    <label for="categorySelect" class="col-sm-3 control-label">Category</label>
+    <div class="col-sm-6">
+        <select id="categoryOption" data-ng-model="$parent.categoryNew"
+                data-ng-options="u.categoryDesc for u in categories"
+                ng-change="$parent.setCategorySelected(categoryNew)" class="form-control"></select>
+    </div>
+</div>
+
+<div class="form-group" show-errors>
+    <label for="firstName" class="col-sm-3 control-label">Product Name</label>
+    <div class="col-sm-6">
+        <input type="text" id="productName" name="productName" class="form-control"
+               ng-model="product.productName" ng-required="true" />
+        <span class="help-block"
+              ng-if="productForm.productName.$error.required">Product Name is required.</span>
+    </div>
+</div>
+
+<div class="form-group" show-errors>
+    <label for="Description" class="col-sm-3 control-label">Product Description</label>
+    <div class="col-sm-6">
+        <textarea rows="4" cols="50" id="description" name="description" class="form-control"
+                  ng-model="product.description" ng-required="true"></textarea>
+        <!--<input type="text" id="Description" name="Description" class="form-control"
+        ng-model="productForm.Description" ng-required="true" />-->
+        <span class="help-block"
+              ng-if="productForm.description.$error.required">Product Description is required.</span>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="unitSelect" class="col-sm-3 control-label">Unit</label>
+    <div class="col-sm-6">
+        <select id="unitSelect" data-ng-model="unitSelected" 
+                data-ng-options="u.name for u in units"
+                ng-change="setUnitSelected(unitSelected)" class="form-control"></select>
+        
+        <!--<select id="categoryOption" data-ng-model="categorySelected"
+                data-ng-options="u.categoryDesc for u in categories"
+                ng-change="goGetbyCategories(categorySelected)" class="form-control"></select>-->
+
+    </div>
+</div>
+
+<div class="form-group" show-errors>
+    <label for="unitPrice" class="col-sm-3 control-label">Unit Price</label>
+    <div class="col-sm-6">
+        <input type="number" step="0.5" id="unitPrice" name="unitPrice" class="form-control"
+               ng-model="product.unitPrice" ng-required="true" min="1" />
+        <span class="help-block"
+              ng-if="productForm.unitPrice.$error.$invalid">Invalid Price Required.</span>
+        
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿<div>
+    <div class="progress" data-ng-show="isBusy">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            <span class="sr-only">100% Complete</span>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Product Category</div>
+        <div class="panel-body">
+            
+                <!--<button class="btn btn-primary" data-ng-click="newCategory()"><i class="glyphicon glyphicon-file"></i> New</button>-->
+                <a class="btn btn-primary" ui-sref="category.newCategory"><i class="glyphicon glyphicon-file"></i> New</a>
+                <span class="pull-right">
+                    Search:
+                    <input type="search" class="input-xlarge" data-ng-model="searchTxt" />
+                </span>
+        </div>
+
+        <!-- Table -->
+        <!--table-condensed table-bordered table-striped-->
+        <table class="table table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Category
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr data-ng-click="edit(category)" class="subrow" style="cursor: pointer;" data-ng-repeat="category in data.categories | orderBy:'CategoryDesc' | filter:searchTxt">-->
+                <tr data-ng-repeat="category in data.categories | orderBy:'categoryDesc' | filter:searchTxt">
+                    <td>
+                        {{category.categoryDesc}}
+                    </td>
+                    <td>
+                        <div class="pull-right">
+                            
+                            <!--<a ui-sref=".detail({roomId: item.roomId})" class="btn">View</a>-->
+                            <a class="btn btn-primary" ui-sref=".edit({id:category.id})"><i class="glyphicon glyphicon-edit"></i></a>
+
+                            <!--<button class="btn btn-primary" ui-sref=".edit({id:category.id)}"><i class="glyphicon glyphicon-edit"></i></button>-->
+
+                            <!--<button class="btn btn-primary" data-ng-click="editCategory(category)"><i class="glyphicon glyphicon-edit"></i></button>-->
+                            <button class="btn btn-danger" data-ng-click="delete(category)"><i class="glyphicon glyphicon-trash"></i></button>
+                        </div>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+
+<div id="myModal" class="modal ">
+    <form role="form" id="deleteForm" name="deleteForm" novalidate ng-submit="deleteFinal()">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"><i class="glyphicon glyphicon-check" /> Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="hero">
+                        <div class="hero-left">
+                            <i class="icon-desktop"></i>
+                        </div>
+
+                        <div class="hero-right">
+                            <!--<div class="hero-title"></div>-->
+                            <p>Are you sure you want to delete {{category.categoryDesc}}?</p>
+                            <p class="text-warning"><small>If you delete this, your data will be lost.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="cancelBtn" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-off" /> Cancel</button>
+                    <button id="deleteFinal" class="btn btn-danger" ng-click="deleteFinal(category)"><i class="glyphicon glyphicon-trash" /> Delete</button>
+                </div>
+            </div>
+        </div>
+     </form>
+</div>
