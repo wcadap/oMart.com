@@ -1,6 +1,6 @@
-Application: oMart
+**Application:** oMart
 
-Description : Online Shopping Web Application
+**Description :** Online Shopping Web Application
 
 **Features**
 
